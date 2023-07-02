@@ -1,0 +1,88 @@
+.admin {
+    padding: 6em 3em;
+
+    &__container {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &-navigation {
+        width: 200px;
+        padding: 1em;
+
+        li {
+            margin: 0.2em 0;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .active {
+            color: $primary-color;
+        }
+    }
+
+    &-content {
+        flex: 1;
+        text-align: center;
+        margin: auto;
+
+        .admin-form {
+            width: 60%;
+            margin: auto;
+
+            &__submit-button {
+                margin-top: 2em;
+            }
+
+            &__news-inputs {
+                margin-top: 3em;
+            }
+
+            &__team {
+                &-info {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .form-control {
+                        width: 30%;
+
+                        input {
+                            text-align: center;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .admin-content {
+
+
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1em;
+                padding: 0.5em;
+                border-bottom: 1px dotted;
+                height: 150px;
+                overflow: hidden;
+
+                div {
+                    width: 20%;
+                }
+
+                .item-image {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .store {
+        background: none;
+    }
+}

@@ -1,0 +1,66 @@
+.contact {
+    @include section;
+
+    &-container {
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        text-shadow: 1px 1px black;
+        text-transform: uppercase;
+        padding: 0.2em;
+    }
+
+    .card {
+        background-color: #000000b5;
+        border: 2px solid;
+    }
+
+    .contact-form {
+
+        .form-column {
+            display: flex;
+            justify-content: space-between;
+
+            .form-control {
+                width: 47%;
+            }
+        }
+
+        label {
+            color: white;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact .card {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        &-container {
+            top: 58%;
+        }
+        &-form {
+            .form-column {
+                display: block !important;
+
+                .form-control {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

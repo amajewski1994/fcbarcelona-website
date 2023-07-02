@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    height: 6em;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.75), rgba(100, 0, 0, 0.9));
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 0 1em 1px;
+    z-index: 2;
+
+    &-logo {
+        max-width: 65px;
+        text-align: center;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .fa-bars {
+        display: none;
+        position: absolute;
+        right: 0;
+        font-size: 2.5em;
+        margin-right: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    &-navigation {
+        display: flex;
+        list-style: none;
+        margin-right: 2em;
+        align-items: center;
+
+        li {
+            text-align: center;
+            text-shadow: 1px 1px rgb(37, 37, 37);
+            color: lighten($secondary-color, 10%);
+            font-weight: bold;
+
+            div {
+                margin: auto;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid lightyellow;
+                overflow: hidden;
+            }
+
+            p {
+                margin-top: 5px;
+                color: lighten($primary-color, 15%);
+
+            }
+        }
+
+        &__element {
+            cursor: pointer;
+            margin: 0 0.75em;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        .logout {
+            margin-left: 30px;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        &-navigation {
+            &__element {
+                margin: 0 0.5em;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+        align-items: start;
+        justify-content: center;
+
+        .fa-bars {
+            display: block;
+        }
+
+        &-navigation {
+            margin-top: 5em;
+            margin-right: 0;
+            padding: 0 2em;
+            background-color: #8e2323e8;
+            border: 1px solid;
+
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+
+            &__element {
+                margin: 0.5em 0.5em;
+            }
+
+            .logout {
+                margin-left: 0.5em;
+            }
+        }
+
+    }
+}

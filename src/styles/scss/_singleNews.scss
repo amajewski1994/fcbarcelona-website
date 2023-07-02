@@ -1,0 +1,136 @@
+.news-single {
+    cursor: default;
+    @include section;
+
+    &__image {
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    &__info {
+        &-title {
+            text-align: center;
+            padding: 0.5em;
+            color: $primary-color;
+            text-shadow: 1px 1px black;
+            text-transform: uppercase;
+            // h2 {
+            //     font-size: 2em;
+            // }
+        }
+
+        .news-single__article {
+            margin: 20px 0;
+
+            &-title {
+                margin: 3px 0;
+                color: darken($secondary-color, 10%);
+            }
+
+            &-description {
+                font-size: 1.2em;
+                text-align: justify;
+            }
+        }
+
+        &-description {
+            font-size: 1.2em;
+        }
+
+        &-bottom {
+            display: flex;
+            padding: 1em 0;
+            font-size: 1.1em;
+            border-bottom: 1px dotted;
+            margin-top: 1em;
+
+            &-date {
+                text-align: start;
+                font-style: italic;
+            }
+
+            &-author {
+                text-align: center;
+            }
+
+            &-likes {
+                text-align: end;
+                position: relative;
+
+                span {
+                    color: blue;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: lighten($color: blue, $amount: 10%);
+                    }
+                }
+
+                div {
+                    width: auto !important;
+                    position: absolute;
+                    right: -10px;
+                    font-size: 0.75em;
+                    color: $primary-color;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                width: 33%;
+            }
+        }
+    }
+
+    &__comments {
+        .back {
+            margin-top: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        &-container {
+            background-color: white;
+            border: 1px solid $primary-color;
+            border-radius: 5px;
+
+            .comment {
+                padding: 0.5em;
+                position: relative;
+                span {
+                    position: absolute;
+                    right: 1em;
+                    color: red;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    display: none;
+                    
+                    &:hover {
+                        scale: 1.1;
+                    }
+                }
+
+                .visible {
+                    display: block;
+                }
+            }
+
+            .even {
+                background-color: darken(white, 5%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .news-single {
+        .card {
+            width: auto !important;
+        }
+    }
+}

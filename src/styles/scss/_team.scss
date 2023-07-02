@@ -1,0 +1,63 @@
+.team {
+
+    @include section;
+
+    .card {
+        background-color: #f9f9f9e0;
+        border: 2px solid;
+
+    }
+
+    &-container {
+        .players-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 3em;
+
+            .team-player {
+                list-style: none;
+                width: 33%;
+                height: 100%;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+
+                a {
+                    color: black;
+                }
+
+                &__image {
+                    overflow: hidden;
+                    height: 75%;
+
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+
+                &__info {
+                    text-align: center;
+                    margin-top: 0.2em;
+                    margin-bottom: 1em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    h3 {
+        text-transform: uppercase;
+        margin: 0.5em;
+        color: $secondary-color;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .team-player {
+        width: 45% !important;
+    }
+}

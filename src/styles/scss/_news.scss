@@ -1,0 +1,80 @@
+.news {
+    @include section;
+
+    &-container {
+
+        .news-element {
+            transition: 0.25s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            &__image {
+                height: 50vh;
+                overflow: hidden;
+            }
+
+            &__info {
+                color: black;
+                margin-top: 1em;
+
+                border-top: 1px solid lightgray;
+                background-color: #d3d3d361;
+                border-radius: 5px;
+            }
+
+            &__title {
+                text-align: center;
+                color: $secondary-color;
+            }
+
+            &__description {
+                font-size: 1.2em;
+                padding: 0.5em 1em;
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: #d3d3d361;
+                padding: 1em;
+
+                &-likes {
+                    span {
+                        color: $secondary-color;
+                    }
+                }
+
+                div {
+                    width: 33%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .news {
+        .card {
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .news {
+        .card {
+            width: auto;
+
+            div {
+                font-size: 0.95em;
+
+                h3 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+}

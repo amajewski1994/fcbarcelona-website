@@ -1,0 +1,131 @@
+.single-player {
+
+    @include section;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0;
+    }
+
+    &__image {
+        overflow: hidden;
+        border-radius: 5px;
+        width: 12em;
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    &__info {
+        flex: 1;
+        margin-left: 2em;
+
+        h2 {
+            color: darken($primary-color, 5%);
+            text-shadow: 1px 1px black;
+        }
+
+        &-container {
+            font-size: 1.6em;
+            margin-top: 1em;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                width: 50%;
+
+                p {
+                    margin: 0.2em 0;
+
+                    span {
+                        display: inline-block;
+                        width: 35%;
+                        text-align: start;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+
+    &__description {
+        p {
+            margin: 1em 0;
+            font-size: 1.25em;
+        }
+    }
+
+    .button {
+        margin: 1em 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .single-player {
+        .card {
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .single-player {
+        &__info {
+            &-container {
+                flex-direction: column;
+                div {
+                    width: auto;
+                    &:nth-child(2) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .single-player {
+        &__info {
+            h2 {
+                font-size: 1.5em !important;
+                text-shadow: 0.5px 0.5px black;
+            }
+            &-container {
+                div {
+                    font-size: 0.7em !important;
+                    p{
+                        span {
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .single-player {
+        &__container {
+            flex-direction: column;
+        }
+        &__image {
+            margin: auto;
+            width: 15em;
+        }
+        &__info {
+            
+            margin: auto;
+            margin-top: 0.25em;
+            &-container {
+                margin-top: 0.25em;
+                
+            }
+        }
+    }
+}

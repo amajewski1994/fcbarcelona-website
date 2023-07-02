@@ -1,0 +1,39 @@
+.auth-form {
+    text-align: center;
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        label {
+            text-align: center;
+        }
+        
+    }
+    .form-control {
+        margin: 1rem 0.2rem;
+        width: 100%;
+        p {
+            font-size: 75%;
+        }
+        .image-upload__preview {
+            margin-bottom: 0.5rem
+        }
+        button {
+            font-size: 0.6rem;
+        }
+    }
+    &__submit {
+        margin-top: 2em;
+        button {
+            margin-bottom: 0.5em;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .auth-form {
+        &__container {
+            // display: block;
+        }
+    }
+}
