@@ -74,7 +74,7 @@ function App() {
 
     <div className="App">
 
-      <Router>
+      <Router basename="/fcbarcelona-website">
         <AuthContext.Provider
           value={{
             isLoggedIn: !!token,
@@ -90,7 +90,7 @@ function App() {
           <CartContextProvider>
             <Header />
             <Suspense
-            fallback={<div className='center'><LoadingSpinner /></div>}
+            fallback={<div className='center fallback'><LoadingSpinner asOverlay={true} /></div>}
             >
             {routes}
             </Suspense>

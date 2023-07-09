@@ -130,6 +130,16 @@ section h2 {
   border-radius: 10px;
 }
 
+.fallback {
+  padding: 6em 3em;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../photos/home/home_main_img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-around;

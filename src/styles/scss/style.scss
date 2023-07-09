@@ -144,6 +144,8 @@ section {
   border-radius: 10px;
 }
 
+@import 'fallback';
+
 @import 'header';
 @import 'buttons';
 @import 'home';
