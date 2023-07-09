@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fcbarcelona-website/static/css/main.2a9e466b.css",
-    "main.js": "/fcbarcelona-website/static/js/main.ef9722b1.js",
+    "main.css": "/fcbarcelona-website/static/css/main.072ea76e.css",
+    "main.js": "/fcbarcelona-website/static/js/main.c77081c4.js",
     "static/js/241.5a9ca9c5.chunk.js": "/fcbarcelona-website/static/js/241.5a9ca9c5.chunk.js",
     "static/js/694.eae8ff52.chunk.js": "/fcbarcelona-website/static/js/694.eae8ff52.chunk.js",
     "static/js/662.e179898f.chunk.js": "/fcbarcelona-website/static/js/662.e179898f.chunk.js",
@@ -23,8 +23,8 @@
     "static/media/fcb-header-min.jpg": "/fcbarcelona-website/static/media/fcb-header-min.b48ff313d7178db9ab72.jpg",
     "static/media/logo.png": "/fcbarcelona-website/static/media/logo.285a8ea0c348433ae822.png",
     "index.html": "/fcbarcelona-website/index.html",
-    "main.2a9e466b.css.map": "/fcbarcelona-website/static/css/main.2a9e466b.css.map",
-    "main.ef9722b1.js.map": "/fcbarcelona-website/static/js/main.ef9722b1.js.map",
+    "main.072ea76e.css.map": "/fcbarcelona-website/static/css/main.072ea76e.css.map",
+    "main.c77081c4.js.map": "/fcbarcelona-website/static/js/main.c77081c4.js.map",
     "241.5a9ca9c5.chunk.js.map": "/fcbarcelona-website/static/js/241.5a9ca9c5.chunk.js.map",
     "694.eae8ff52.chunk.js.map": "/fcbarcelona-website/static/js/694.eae8ff52.chunk.js.map",
     "662.e179898f.chunk.js.map": "/fcbarcelona-website/static/js/662.e179898f.chunk.js.map",
@@ -38,7 +38,7 @@
     "705.1adaf3e5.chunk.js.map": "/fcbarcelona-website/static/js/705.1adaf3e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a9e466b.css",
-    "static/js/main.ef9722b1.js"
+    "static/css/main.072ea76e.css",
+    "static/js/main.c77081c4.js"
   ]
 }
